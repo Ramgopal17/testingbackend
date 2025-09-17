@@ -8,7 +8,8 @@ app.use(express.json());
 
 app.use("/api/users", userRoutes);
 
-const PORT = 5000;
-app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
+const PORT = 3000;
+app.listen(3000, "0.0.0.0", () => {
+  console.log("🚀 Server running at http://0.0.0.0:3000");
 });
+
